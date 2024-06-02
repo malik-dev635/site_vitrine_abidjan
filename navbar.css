@@ -1,0 +1,30 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid rgb(109, 109, 109);
+}
+nav .nav-titre {
+  font-family: "playfair Display", sans-serif;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+nav .onglets {
+  margin-top: 3px;
+  margin-left: 300px;
+  font-size: large;
+}
+nav .onglets a {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  margin-right: 10px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding-bottom: 5px;
+  transition: all 0.2s;
+}
+nav .onglets a:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}

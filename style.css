@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,600;1,600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  background-color: rgb(35, 38, 45);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.282), rgba(0, 0, 0, 0.282)),
+    url(abidjanimage.jpg);
+  background-position: center;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+header h1 {
+  font-family: "playfair Display", sans-serif;
+  font-size: 190px;
+  color: #fff;
+}
+header h4 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  border-bottom: 1px;
+}
+header button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #111;
+  font-weight: bold;
+  font-weight: 400px;
+  border: none;
+  font-size: 30px;
+  font-family: "playfair Display", sans-serif;
+  outline: none;
+  cursor: pointer;
+  border-radius: 150px;
+  margin-bottom: 3em;
+  position: relative;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+header button::after {
+  content: "";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+header button:hover {
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0px rgba(141, 63, 244, 0.25),
+    -10px 10px 25px 0px rgba(39, 196, 249, 0.25);
+}
+
+.moument {
+  display: flex;
+  justify-content: center;
+}
+.part {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.part .carte .truc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+.part .carte .truc .description {
+  flex: 0 0 30%;
+  padding: 40px 30px 40px 30px;
+  background-color: #111;
+  color: #8f8f8f;
+  border-radius: 8px;
+}
+.part .carte .truc .description h1 {
+  color: white;
+}
+.part .carte .truc.images {
+  flex: 0 0 70%;
+}
+
+.part .carte .truc .images img {
+  height: 400px;
+  width: 600px;
+  margin-top: 5px;
+  border-radius: 0px 9px 9px 0px;
+}
+footer {
+  margin-top: 40px;
+  border-top: 5px solid #111;
+  background-color: #111;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+footer h1 {
+  font-family: "playfair Display", sans-serif;
+  border-bottom: 1px solid 20px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.c {
+  color: rgb(235, 235, 235);
+}
+
+@media screen and (max-width: 600px) {
+  nav .onglets {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-size: 100px;
+  }
+  header h4 {
+    font-size: 20px;
+    margin-top: -70px;
+  }
+  .part .carte {
+    margin: 10px;
+  }
+  .part .carte .truc .images {
+    height: 200px;
+    width: 100px;
+    margin-top: 8px;
+  }
+  .part .carte .truc {
+    display: flex;
+  }
+  footer {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .onglets {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 100px;
+  }
+
+  header h4 {
+    font-size: 20px;
+    margin-top: -70px;
+  }
+
+  .part .carte {
+    margin: 10px;
+  }
+
+  .part .carte .truc .images {
+    height: 200px;
+    width: 100px;
+    margin-top: 8px;
+  }
+
+  .part .carte .truc {
+    display: flex;
+  }
+
+  footer {
+    padding: 30px;
+  }
+}

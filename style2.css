@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,600;1,600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  background-color: rgb(35, 38, 45);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.282), rgba(0, 0, 0, 0.562)),
+    url(View_of_the_Plateau_Abidjan.jpg);
+  background-position: top;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+header h4 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  border-bottom: 1px;
+}
+div.info {
+  margin-top: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 1em;
+  font-size: xx-large;
+  padding: 30px;
+  color: white;
+}
+div.list {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 20em;
+}
+
+ol {
+  list-style: none;
+  width: 300px;
+}
+
+ol li {
+  font-size: 1.2rem;
+  background: rgb(23, 23, 23);
+  margin: 10px 0;
+  padding: 20px 30px;
+  cursor: pointer;
+  position: relative;
+  color: rgb(255, 255, 255);
+  transition: all 0.4s;
+  z-index: 5;
+}
+
+ol li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background: green;
+  transition: all 0.4s;
+  z-index: -1;
+}
+ol li:hover::before {
+  width: 100%;
+}
+
+ol li:hover {
+  transform: translateX(20px);
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 5px solid #111;
+  background-color: #111;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+footer h1 {
+  font-family: "playfair Display", sans-serif;
+  border-bottom: 1px solid 20px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.c {
+  color: rgb(235, 235, 235);
+}
+
+/* Styles pour écrans larges */
+@media screen and (min-width: 768px) {
+  /* Ajoutez ici les styles spécifiques aux écrans larges */
+  nav .onglets {
+    margin-left: 0;
+  }
+}
+
+/* Styles pour écrans de taille moyenne */
+@media screen and (max-width: 767px) {
+  /* Ajoutez ici les styles spécifiques aux écrans de taille moyenne */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav .onglets {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  header h4 {
+    font-size: 40px;
+  }
+  div.info {
+    font-size: large;
+  }
+  div.list {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  ol li {
+    width: auto;
+  }
+}
+
+/* Styles pour écrans mobiles */
+@media screen and (max-width: 480px) {
+  /* Ajoutez ici les styles spécifiques aux écrans mobiles */
+  header h4 {
+    font-size: 30px;
+  }
+  div.info {
+    font-size: medium;
+  }
+}
+
+/* Styles communs pour tous les écrans */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  background-color: rgb(35, 38, 45);
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid #6f6f6f;
+  padding: 10px;
+}
+nav h1 {
+  font-family: "playfair Display", sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+nav .onglets {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: large;
+}
+nav .onglets a {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  margin-right: 10px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding-bottom: 5px;
+}
+nav .onglets a:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.282), rgba(0, 0, 0, 0.705)),
+    url(View_of_the_Plateau_Abidjan.jpg);
+  background-position: center;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+header h4 {
+  font-size: 75px;
+  color: white;
+  text-align: center;
+  border-bottom: 1px;
+}
+div.info {
+  margin: 2em;
+  font-size: xx-large;
+  padding: 30px;
+  color: white;
+}
+div.list {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 20em;
+}
+ol {
+  list-style: none;
+  width: 300px;
+  padding: 0;
+}
+ol li {
+  font-size: 1.2rem;
+  background: rgb(23, 23, 23);
+  margin: 10px 0;
+  padding: 20px 30px;
+  cursor: pointer;
+  position: relative;
+  color: rgb(255, 255, 255);
+  transition: all 0.4s;
+  z-index: 5;
+}
+ol li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background: green;
+  transition: all 0.4s;
+  z-index: -1;
+}
+ol li:hover::before {
+  width: 100%;
+}
+ol li:hover {
+  transform: translateX(20px);
+}
+footer {
+  margin-top: 40px;
+  border-top: 5px solid #111;
+  background-color: #111;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+footer h1 {
+  font-family: "playfair Display", sans-serif;
+  border-bottom: 1px solid 20px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.c {
+  color: rgb(235, 235, 235);
+}
